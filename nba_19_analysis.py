@@ -39,6 +39,8 @@ for ctr in range(30):
     scores.append([])
     three_attempts.append(0)
     three_makes.append(0)
+    #we want to filter out all games played in the bubble due to uncertainty
+    #condition to check if team played in bubble by checking games played 
     if(ws.max_row <= 69):
         for row in range(3, ws.max_row + 1):
             #we use a 2-D array for scores since we eventually want the std. dev. eventually
